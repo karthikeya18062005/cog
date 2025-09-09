@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cognizant CLuster-2 Technical Exam Prep Guide</title>
+    <title>Cognizant cluster-2 Technical Exam Prep Guide</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,7 +59,6 @@
         <div class="container mx-auto text-center">
             <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Master the Cognizant Cluster-2 Exam</h1>
             <p class="mt-2 text-lg text-gray-300">Your Ultimate Guide for GenC, GenC Pro & GenC Next Roles</p>
-            <p><b>!!!!----Just for Refferance dont just prepare these alone----!!!!</b></p>
         </div>
     </header>
 
@@ -119,6 +118,67 @@
                     <li>Delete duplicate rows from a table. (Medium-Hard) - Asked ~8 times (2023-2024)</li>
                     <li>Use a `LEFT JOIN` to find departments that have no employees. (Easy-Medium) - Asked ~7 times (2022-2024)</li>
                 </ol>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center text-[#EF476F] mb-2">Advanced & Unconventional Challenges</h2>
+            <p class="text-center text-lg text-gray-700 max-w-3xl mx-auto mb-8">
+                For GenC Pro and Next roles, Cognizant sometimes includes more complex problems to identify top-tier candidates. Here are examples of tougher and less common questions that require deeper algorithmic and database knowledge.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-[#FFD166]">
+                    <h3 class="text-xl font-bold text-center mb-4">Python: The Algorithmic Hurdles</h3>
+                    <p class="text-sm text-gray-600 mb-4">These problems move beyond basic syntax and test your understanding of algorithms, data structures, and efficiency.</p>
+                    <ul class="list-disc list-inside space-y-3 text-gray-800">
+                        <li>
+                            <strong>Trapping Rain Water:</strong> Given an elevation map (an array of integers), calculate how much rainwater can be trapped.
+                            <span class="block text-xs text-gray-500 pl-4">- Why it's hard: Requires dynamic programming or a two-pointer approach, testing algorithmic thinking beyond simple loops.</span>
+                        </li>
+                        <li>
+                            <strong>LRU Cache Implementation:</strong> Design a Least Recently Used (LRU) cache with O(1) complexity for get and put operations.
+                            <span class="block text-xs text-gray-500 pl-4">- Why it's hard: Tests object-oriented design and combining data structures (hash map + doubly linked list).</span>
+                        </li>
+                        <li>
+                            <strong>Longest Palindromic Substring:</strong> Find the longest substring within a given string that is also a palindrome.
+                             <span class="block text-xs text-gray-500 pl-4">- Why it's hard: The optimal solution needs dynamic programming or the "expand from center" technique to avoid brute-force timeouts.</span>
+                        </li>
+                         <li>
+                            <strong>Course Schedule (Graph Theory):</strong> Given courses and their prerequisites, determine if all courses can be completed.
+                             <span class="block text-xs text-gray-500 pl-4">- Why it's hard: This is a graph problem (detecting a cycle) requiring knowledge of algorithms like Depth First Search (DFS).</span>
+                        </li>
+                        <li>
+                            <strong>Merge K Sorted Lists:</strong> Merge k sorted linked lists into one sorted linked list.
+                            <span class="block text-xs text-gray-500 pl-4">- Why it's hard: The most efficient solution requires a Priority Queue (min-heap), testing knowledge of more advanced data structures.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-[#06D6A0]">
+                    <h3 class="text-xl font-bold text-center mb-4">SQL: The Brain Teasers</h3>
+                     <p class="text-sm text-gray-600 mb-4">These queries require more than basic joins and aggregations, often involving advanced window functions or complex logic.</p>
+                     <ul class="list-disc list-inside space-y-3 text-gray-800">
+                        <li>
+                            <strong>Consecutive Numbers:</strong> Find all numbers that appear at least three times in a row in a table.
+                            <span class="block text-xs text-gray-500 pl-4">- Why it's hard: A classic use case for advanced window functions like `LAG()` or `LEAD()` to compare adjacent rows.</span>
+                        </li>
+                        <li>
+                            <strong>Trip Cancellation Rate:</strong> Calculate the daily cancellation rate for trips involving unbanned users.
+                             <span class="block text-xs text-gray-500 pl-4">- Why it's hard: Requires multiple joins, conditional aggregation with `CASE WHEN`, and careful filtering in one query.</span>
+                        </li>
+                        <li>
+                           <strong>Running Total Calculation:</strong> Compute a running total of a column (e.g., sales) over a period.
+                           <span class="block text-xs text-gray-500 pl-4">- Why it's hard: Tests knowledge of window functions, specifically `SUM() OVER (ORDER BY ...)`, which is an efficient, modern SQL feature.</span>
+                        </li>
+                         <li>
+                           <strong>Market Analysis with Pivot:</strong> Find how many orders each user placed as a buyer in a specific year, potentially requiring a data pivot.
+                           <span class="block text-xs text-gray-500 pl-4">- Why it's hard: Tests the ability to reshape data by transforming rows into columns, either with `PIVOT` or conditional aggregation.</span>
+                        </li>
+                        <li>
+                            <strong>Department Top Three Salaries:</strong> Find the employees who are high earners in each of the departments.
+                            <span class="block text-xs text-gray-500 pl-4">- Why it's hard: Requires window functions like `DENSE_RANK()` or `RANK()` partitioned by department, a common pattern for ranked reports.</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
